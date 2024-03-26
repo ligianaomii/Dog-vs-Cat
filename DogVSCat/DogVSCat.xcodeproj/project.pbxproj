@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		41CF42272BB20D7800CEC72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF42262BB20D7800CEC72D /* AppDelegate.swift */; };
 		41CF42292BB20D7800CEC72D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41CF42282BB20D7800CEC72D /* GameScene.sks */; };
-		41CF422B2BB20D7800CEC72D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41CF422A2BB20D7800CEC72D /* Actions.sks */; };
 		41CF422D2BB20D7800CEC72D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF422C2BB20D7800CEC72D /* GameScene.swift */; };
 		41CF422F2BB20D7800CEC72D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF422E2BB20D7800CEC72D /* GameViewController.swift */; };
 		41CF42322BB20D7800CEC72D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CF42302BB20D7800CEC72D /* Main.storyboard */; };
@@ -41,7 +40,6 @@
 		41CF42232BB20D7800CEC72D /* DogVSCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogVSCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CF42262BB20D7800CEC72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41CF42282BB20D7800CEC72D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		41CF422A2BB20D7800CEC72D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		41CF422C2BB20D7800CEC72D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		41CF422E2BB20D7800CEC72D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		41CF42312BB20D7800CEC72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			children = (
 				41CF42262BB20D7800CEC72D /* AppDelegate.swift */,
 				41CF42282BB20D7800CEC72D /* GameScene.sks */,
-				41CF422A2BB20D7800CEC72D /* Actions.sks */,
 				41CF422C2BB20D7800CEC72D /* GameScene.swift */,
 				41CF422E2BB20D7800CEC72D /* GameViewController.swift */,
 				41CF42302BB20D7800CEC72D /* Main.storyboard */,
@@ -239,7 +236,6 @@
 				41CF42292BB20D7800CEC72D /* GameScene.sks in Resources */,
 				41CF42342BB20D7A00CEC72D /* Assets.xcassets in Resources */,
 				41CF42372BB20D7A00CEC72D /* LaunchScreen.storyboard in Resources */,
-				41CF422B2BB20D7800CEC72D /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +444,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NY9FW26C6;
+				DEVELOPMENT_TEAM = 568HXSS446;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -476,7 +472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NY9FW26C6;
+				DEVELOPMENT_TEAM = 568HXSS446;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
