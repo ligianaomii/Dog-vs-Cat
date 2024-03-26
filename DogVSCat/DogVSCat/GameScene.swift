@@ -42,28 +42,69 @@ class GameScene: SKScene {
     }
     
     func spawnItem() {
-        let item = SKSpriteNode(imageNamed: "item")
-        item.name = "item"
+        let item = childNode(withName: "bolinha") as! SKSpriteNode
+//        item.name = "item"
         
-        let spawnX = CGFloat.random(in: item.size.width/2...(size.width - item.size.width/2))
-        let spawnY = size.height
+        item.run(SKAction.moveTo(x: -100, duration: 1.0))
+//        item.position = CGPoint(x: spawnX, y: spawnY)
+//        addChild(item)
+        if item.position.x > 1000 {
+            item.removeFromParent()
+            item.position = CGPoint(x: 215.5, y: 442.5)
+            item.zPosition = 11
+            addChild(item)
+        }
         
-        item.zPosition = 5
-        item.position = CGPoint(x: spawnX, y: spawnY)
-        addChild(item)
         
-        let moveAction = SKAction.moveTo(y: -300, duration: 5)
-        let removeAction = SKAction.removeFromParent()
-        let sequenceAction = SKAction.sequence([moveAction, removeAction])
-        item.run(sequenceAction)
         
-        // Set up physics body for collision detection
-        item.physicsBody = SKPhysicsBody(rectangleOf: item.size)
-        item.physicsBody?.categoryBitMask = 1
-        item.physicsBody?.contactTestBitMask = 1
-        item.physicsBody?.collisionBitMask = 0
-        item.physicsBody?.affectedByGravity = true
+        
+//        let moveAction = SKAction.moveTo(y: -300, duration: 5)
+//        let removeAction = SKAction.removeFromParent()
+//        let sequenceAction = SKAction.sequence([moveAction, removeAction])
+//        item.run(sequenceAction)
+        
+        
+        
+//        item.physicsBody = SKPhysicsBody(rectangleOf: item.size)
+//        item.physicsBody?.categoryBitMask = 1
+//        item.physicsBody?.contactTestBitMask = 1
+//        item.physicsBody?.collisionBitMask = 0
+//        item.physicsBody?.affectedByGravity = true
     }
+    
+//    func spawnItem() {
+//        let item = SKSpriteNode(imageNamed: "item")
+//        item.name = "item"
+//        
+//        let spawnX = size.width / 2 // Fixed x-coordinate
+//        let spawnY = size.height
+//        
+//        item.zPosition = 5
+//        item.position = CGPoint(x: spawnX, y: spawnY)
+//        addChild(item)
+//        
+//        // Adjust the impulse range based on desired y-positions
+//        let impulseX: CGFloat = CGFloat.random(in: -10...10) // Adjust the x-impulse range as needed
+//        
+//        // Example: Adjust y-impulse based on the desired y-positions
+//        var impulseY: CGFloat = 0.0
+//        let randomY = CGFloat.random(in: 100...300) // Adjust the y-position range as needed
+//        let deltaY = randomY - spawnY
+//        let timeToReachY = sqrt(2 * abs(deltaY) / 9.8)
+//        impulseY = deltaY / timeToReachY
+//        
+//        item.physicsBody = SKPhysicsBody(rectangleOf: item.size)
+//        item.physicsBody?.categoryBitMask = 1
+//        item.physicsBody?.allowsRotation = true
+//        item.physicsBody?.contactTestBitMask = 1
+//        item.physicsBody?.collisionBitMask = 0
+//        item.physicsBody?.affectedByGravity = true
+//        
+//        // Apply impulses
+//        item.physicsBody?.applyImpulse(CGVector(dx: impulseX, dy: impulseY))
+//    }
+
+
     
     func touchDown(atPoint pos : CGPoint) {
         
